@@ -1,1 +1,39 @@
-heleheje
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yezidi Transliterator</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+        textarea {
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 96%;
+            font-size: 34px;
+            height: 100px;
+            resize: none;
+        }
+        * {
+            font-family: 'Verdana';
+        }
+        @font-face {
+            font-family: YZIDI;
+            src: url(YZIDI.ttf);
+        }
+        #braille {
+            font-family: YZIDI, Verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1>ترجمة شنگالي</h1>
+    <textarea spellcheck="false" id="inuk" placeholder="اللغة العربية" style="direction:ltr"></textarea>
+    <textarea contenteditable="false" id="braille" placeholder="شنگالي" style="direction:rtl"></textarea>
+
+    <!-- تعديل رابط JavaScript -->
+    <script src="https://raw.githubusercontent.com/shamo74/Yezidi-Language/main/yezidi.js"></script>
+</body>
+</html>
